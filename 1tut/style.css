@@ -12,7 +12,7 @@ body {
     background-color: #111;
 }
 
-#box1 {
+/* #box1 {
     height: 300px;
     width: 300px;
     background-color: crimson;
@@ -24,6 +24,40 @@ body {
     background-color: lightseagreen;
 }
 
+#box3 {
+    height: 300px;
+    width: 300px;
+    background-color: lightgoldenrodyellow;
+}
+
 h1 {
     color: aliceblue;
+} */
+
+#nav {
+    background-color: lightpink;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+#part {
+    display: flex;
+    gap: 50px;
+}
+
+#code {
+    height: 100vh;
+    position: relative;
+}
+
+#code h1 {
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    white-space: nowrap;
 }
