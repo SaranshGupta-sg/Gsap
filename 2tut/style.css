@@ -96,7 +96,7 @@ h2 {
 
 /* Part - 2 */
 
-#page1 {
+/* #page1 {
     height: 100%;
     width: 100%;
     background-color: lightblue;
@@ -129,4 +129,36 @@ h2 {
     height: 200px;
     width: 200px;
     background-color: rgb(218, 132, 194);
+} */
+
+/* Part - 3 */
+
+body {
+    overflow-x: hidden;
+
+}
+
+#page1 {
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+}
+
+#page2 {
+    height: 100%;
+    width: 100%;
+    background-color:  rgb(26, 176, 226);
+    padding: 5vw 0;
+}
+
+#page3 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(3, 67, 88);
+}
+
+#page2 h1 {
+    font-size: 50vw;
+    text-transform: uppercase;
+    font-weight: 560;
 }

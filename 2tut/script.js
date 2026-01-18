@@ -73,17 +73,20 @@
 
 // Part - 2
 
-gsap.from("#page2 #box", {
-    scale: 0,
-    opacity: 0,
-    duration: 1,
-    rotate:720,
-    scrollTrigger: {
-        trigger:"#page2 #box",
-        scroller:"body",
-        markers:true,
-        start:"top 60%",
-        end:"top 30%", //ab isme to kya hua ek baar chl gaya fr kitna bhi scroll karo upar ya niche kuch nahi hoga lekin apn kya chah rahe h ki jaise jaise scroll ho animation work kare islie apn scrub ka use karenge
-        scrub: true, // iska mtlb start aur end k bich me animation hoga 
-    } 
-})
+// gsap.from("#page2 #box", {
+//     scale: 0,
+//     opacity: 0,
+//     duration: 1,
+//     rotate:720,
+//     scrollTrigger: {
+//         trigger:"#page2 #box",
+//         scroller:"body",
+//         markers:true,
+//         start:"top 60%",
+//         end:"top 30%", //ab isme to kya hua ek baar chl gaya fr kitna bhi scroll karo upar ya niche kuch nahi hoga lekin apn kya chah rahe h ki jaise jaise scroll ho animation work kare islie apn scrub ka use karenge
+//         // scrub: true, // iska mtlb start aur end k bich me animation hoga, isko apn 2 tarah se likh skte h ya to boolean ya numbers
+//         scrub: 2,
+//     } 
+// })
+
+// Part - 3
