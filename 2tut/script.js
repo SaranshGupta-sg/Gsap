@@ -90,3 +90,19 @@
 // })
 
 // Part - 3
+
+gsap.to("#page2 h1", {
+    transform:"translateX(-240%)",
+    scrollTrigger: {
+        // trigger:"#page2 h1",
+        trigger:"#page2",
+        scroller:"body",
+        markers:true,
+        // start:"top 50%",
+        start:"top 0%", // jb ye pura scoll hoke page k top most point tk pahuch jaega fir scroll/trigger hoga
+        end:"top -100%",
+        scrub: 2,
+        // jb bhi "pin" naam ki property lagaenge tb uske parent ko trigger karenge jaise #page2 h1 me sirf #page2 hi likhenge jo ki parent h h1 ka h1 ko hta denge kyoki wo child hai
+        pin:true,
+}
+})
