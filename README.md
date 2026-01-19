@@ -12,3 +12,5 @@ CDN (Content Delivery Network)
 Scalable Vector Graphics (SVG)
 
 ${ } is called a template literal for string interpolation.
+
+easeing in gsap (Ease Visualizer) = helps in movement of animation when it goes from initial to final postion to check its smoothness and its graph whether it goes slow aur fast 
