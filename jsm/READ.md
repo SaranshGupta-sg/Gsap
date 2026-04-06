@@ -1,9 +1,4 @@
 
-
->Play/Pause
-
-
-
  useGSAP(() => {
     gsap.to('.stagger-box', {
         y: 250,
