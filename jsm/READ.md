@@ -1,52 +1,6 @@
 
 
-
-
-
-
-
-
-
-
-const timeline = gsap.timeline({
-    repeat: -1, repeatDelay: 1, yoyo: true
-});
-
-useGSAP(() => {
-    timeline.to('#yellow-box', {
-        x: 250,
-        rotation: 360,
-        borderRadius: '100%',
-        duration: 2,
-        ease: 'back.inOut',
-    })
-
-    timeline.to('#yellow-box', {
-        y: 250,
-        scale: 2,
-        rotation: 360,
-        borderRadius: '100%',
-        duration: 2,
-        ease: 'back.inOut',
-    })
-
-    timeline.to('#yellow-box', {
-        x: 500,
-        scale: 1,
-        rotation: 360,
-        borderRadius: '8px',
-        duration: 2,
-        ease: 'back.inOut',
-    })
-}, [])
-
-onClick={() => {
-    if(timeline.paused()) {
-        timeline.play()
-    } else{
-        timeline.pause();
-    }
- }}>Play/Pause
+>Play/Pause
 
 
 
