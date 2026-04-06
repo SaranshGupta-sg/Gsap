@@ -1,35 +1,10 @@
 
 
-useGsap(() => {
-    gsap.from('#green-box', {
-        x: 250, // starting se kaha tk jana h 
-        repeat: -1, // animation happens continuosly without reloading
-        yoyo: true, // for back and forth, start se end tk aaya aur fr reverse 
-        rotation: 360, // rotate karega pura 360 degree
-        duration: 2, // 2 seconds - move slower
-        ease: 'power1.inOut', // ease is how animation happpen in this power1.inOut which start with lot of power and then slows down
-    })
-}, [])
 
 
 
-// fromTo - add 2 objects for two properties
-useGsap(() => {
-    gsap.fromTo('#red-box', {
-        x: 0,
-        rotation: 0,
-        borderRadius: '0%', //remain square
-    }, {
-        x: 250, // starting se kaha tk jana h 
-        repeat: -1, // animation happens continuosly without reloading
-        yoyo: true, // for back and forth, start se end tk aaya aur fr reverse. move left and right
-        rotation: 360, // rotate karega pura 360 degree
-        duration: 2, // 2 seconds - move slower
-        ease: 'bounce.out',
-        borderRadius: '100%',  // becomes circle
-    })
-}, []) 
-// it will turn from square to circle using borderRadius and then comes back
+
+
 
 
 

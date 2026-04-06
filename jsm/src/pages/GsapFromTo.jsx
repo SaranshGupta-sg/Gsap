@@ -1,5 +1,29 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
 const GsapFromTo = () => {
   // TODO: Implement the gsap.fromTo() method
+  // fromTo - add 2 objects for two properties
+  useGSAP(() => {
+    gsap.fromTo(
+      "#red-box",
+      {
+        x: 0,
+        rotation: 0,
+        borderRadius: "0%", //remain square
+      },
+      {
+        x: 250, // starting se kaha tk jana h
+        repeat: -1, // animation happens continuosly without reloading
+        yoyo: true, // for back and forth, start se end tk aaya aur fr reverse. move left and right
+        rotation: 360, // rotate karega pura 360 degree
+        duration: 2, // 2 seconds - move slower
+        ease: "bounce.out",
+        borderRadius: "100%", // becomes circle
+      },
+    );
+  }, []);
+  // it will turn from square to circle using borderRadius and then comes back
 
   return (
     <main>

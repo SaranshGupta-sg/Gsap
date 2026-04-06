@@ -4,15 +4,15 @@ import gsap from "gsap";
 const GsapFrom = () => {
   // TODO: Implement the gsap.from() method
   useGSAP(() => {
-    gsap.from('#green-box', {
-        x: 250, // starting se kaha tk jana h 
-        repeat: -1, // animation happens continuosly without reloading
-        yoyo: true, // for back and forth, start se end tk aaya aur fr reverse 
-        rotation: 360, // rotate karega pura 360 degree
-        duration: 2, // 2 seconds - move slower
-        ease: 'power1.inOut', // ease is how animation happpen in this power1.inOut which start with lot of power and then slows down
-    })
-}, [])
+    gsap.from("#green-box", {
+      x: 250, // starting se kaha tk jana h
+      repeat: -1, // animation happens continuosly without reloading
+      yoyo: true, // for back and forth, start se end tk aaya aur fr reverse
+      rotation: 360, // rotate karega pura 360 degree
+      duration: 2, // 2 seconds - move slower
+      ease: "power1.inOut", // ease is how animation happpen in this power1.inOut which start with lot of power and then slows down
+    });
+  }, []);
 
   return (
     <main>
