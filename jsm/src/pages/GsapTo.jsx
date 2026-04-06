@@ -1,5 +1,18 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
 const GsapTo = () => {
   // TODO: Implement the gsap.to() method
+  useGSAP(() => {
+    gsap.to("#blue-box", {
+      x: 250, // starting se kaha tk jana h
+      repeat: -1, // animation happens continuosly without reloading
+      yoyo: true, // for back and forth, start se end tk aaya aur fr reverse
+      rotation: 360, // rotate karega pura 360 degree
+      duration: 2, // 2 seconds - move slower
+      ease: "elastic", // ease is how animation happpen in this elastic means spring
+    });
+  }, []);
 
   return (
     <main>
