@@ -10,25 +10,29 @@ const GsapScrollTrigger = () => {
 
   // TODO: Implement the gsap scroll trigger
 
-  useGSAP(() => {
-    const boxes = gsap.utils.toArray(scrollRef.current.children);
+  useGSAP(
+    () => {
+      const boxes = gsap.utils.toArray(scrollRef.current.children);
 
-    boxes.forEach((box) => {
-      gsap.to(box, {
-        x: 150,
-        rotation: 360,
-        borderRadius: "100%",
-        scale: 1.5, // size badi ho jaegi
-        scrollTrigger: {     // animation tabhi chalega jb scroll krte krte box tk pahuch jaenge, pehle se nahi chl jaega
-          trigger: box,
-          start: "bottom, bottom",
-          end: "top 20%",
-          scrub: true,
-        },
-        ease: "power1.inOut",
+      boxes.forEach((box) => {
+        gsap.to(box, {
+          x: 150 * (boxes.indexOf(box) + 5), // isse box screen k bahar chale jaenge
+          rotation: 360,
+          borderRadius: "100%",
+          scale: 1.5, // size badi ho jaegi
+          scrollTrigger: {
+            // animation tabhi chalega jb scroll krte krte box tk pahuch jaenge, pehle se nahi chl jaega
+            trigger: box,
+            start: "bottom bottom",
+            end: "top 10%",
+            scrub: true,
+          },
+          ease: "power1.inOut",
+        });
       });
-    });
-  }, []);
+    },
+    { scope: scrollRef },
+  );
 
   return (
     <main>
