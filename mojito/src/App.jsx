@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger, SplitText); //this line make sure that both p
 
 const App = () => {
   return (
-    <div>
+    <div className='flex-center'>
       App
     </div>
   )
